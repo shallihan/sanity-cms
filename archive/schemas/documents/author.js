@@ -1,8 +1,10 @@
+import { BsPersonLinesFill } from 'react-icons/bs'
+
 export default {
     name: "author",
     title: "Author",
     type: "document",
-    icon: () => "✍️",
+    icon: BsPersonLinesFill,
     fields: [
       {
         name: "name",

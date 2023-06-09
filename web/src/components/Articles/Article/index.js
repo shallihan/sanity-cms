@@ -30,7 +30,7 @@ const Article = ({ article }) => {
       </ArticleDetails>
       <ArticleBlock>
         <PortableText
-          value={article._rawDescription}
+          value={article._rawBody}
           components={portableTextComponents}
         />
       </ArticleBlock>

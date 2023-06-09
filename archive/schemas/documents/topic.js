@@ -1,8 +1,10 @@
+import { MdOutlineTopic } from 'react-icons/md'
+
 export default {
     name: "topic",
     title: "Topic",
     type: "document",
-    icon: () => "🗂️",
+    icon: MdOutlineTopic,
     fields: [
       {
         name: "name",

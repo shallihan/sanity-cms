@@ -13,13 +13,13 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query {
-  articles: allSanityPost {
+  articles: allSanityArticle {
     edges {
       node {
         title
         subtitle
-        _rawDescription
-        description {
+        _rawBody
+        body {
           _type
           _key
           _rawChildren

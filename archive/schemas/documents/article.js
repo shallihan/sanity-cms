@@ -1,33 +1,40 @@
+import { GrArticle } from 'react-icons/gr';
+
 export default {
-  title: 'Post',
-  name: 'post',
+  title: 'Article',
+  name: 'article',
   type: 'document',
-  icon: () => '📄',
+  icon: GrArticle,
   fields: [
     {
-      title: 'Post Title',
+      title: 'Article Title',
       name: 'title',
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
     {
-      title: 'Post Subtitle',
+      title: 'Article Subtitle',
       name: 'subtitle',
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+    },
+    {
       name: 'author',
       type: 'reference',
       to: {type: 'author'},
-      title: 'Creator',
+      title: 'Article Creator',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'topic',
       type: 'reference',
       to: {type: 'topic'},
-      title: 'Topic',
+      title: 'Article Topic',
     },
     {
       title: 'Date Created',
@@ -36,8 +43,8 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: 'Description',
-      name: 'description',
+      title: 'Body',
+      name: 'body',
       type: 'array',
       of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),

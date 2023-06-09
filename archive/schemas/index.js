@@ -1,6 +1,6 @@
 // Document Schemas
-import post from "./documents/post";
+import article from "./documents/article";
 import author from "./documents/author";
 import topic from "./documents/topic";
 
-export const schemaTypes = [post, author, topic]
+export const schemaTypes = [article, author, topic]
