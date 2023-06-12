@@ -1,35 +1,10 @@
 import React from 'react'
-import {defineConfig, buildLegacyTheme, ToolLink} from 'sanity'
+import {defineConfig, buildLegacyTheme} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {schemaTypes} from './schemas'
 import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
 import Logo from './src/assets/logo'
-import {Button, Flex} from '@sanity/ui'
 
-function CustomToolMenu(props) {
-  const {activeToolName, context, tools} = props
-  const isSidebar = context === 'sidebar'
-
-	// Change flex direction depending on context
-	const direction = isSidebar ? 'column' : 'row'
-
-  return (
-    <Flex gap={1} direction={direction}>
-      {tools.map((tool) => (
-        <Button
-          as={ToolLink}
-          icon={tool.icon || PlugIcon}
-          key={tool.name}
-          name={tool.name}
-          padding={3}
-          selected={tool.name === activeToolName}
-          text={tool.title || tool.name}
-          tone="primary"
-        />
-      ))}
-    </Flex>
-  )
-}
 
 const props = {
   '--my-white': '#fff',

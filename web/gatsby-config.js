@@ -21,7 +21,7 @@ module.exports = {
       dataset: 'production',
       watchMode: true,
       token:
-        'skBpgwu706R0YjmJfFVXfPzOIvyFQ7zz3Nlmdp3Y7b8b2JL0dg9loAMqojy01jJDrGox3aaYd3teCyGWcYK0Q8hOULgwuXpoYT7imphQTmApap4Po0vcaznbXU5h9Dt2Eo4YKgho7I1tIpMxHI23MQpVoES6EnTViqy8fYVkoAIM0Dw4kjyw'
+        'sk2KS3fPpc1WKYtus2sygjK0yAaO4XlFIXTLjVwQ9XVUWCAMb1oPZGpprY98sIFT7HbOhSfk98P9vu3SuHpBvIkxToxTTr2HiZX5UsodffH1B8ay4YrbnC9uZc3yJFgOkB5LZO8z0XQRC6a3TlzjxdiV6035srmJYpSBxw2qN9Yw3pKNyAH0'
     }
   },]
 };

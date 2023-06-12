@@ -16,6 +16,11 @@ query {
   articles: allSanityArticle {
     edges {
       node {
+        mainImage {
+          asset {
+            gatsbyImageData
+          }
+        }
         title
         subtitle
         _rawBody

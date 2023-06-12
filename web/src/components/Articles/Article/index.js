@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PortableText } from "@portabletext/react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const portableTextComponents = {
   marks: {
@@ -20,6 +21,7 @@ const Article = ({ article }) => {
   console.log(article);
   return (
     <Container>
+      <GatsbyImage image={getImage(article.mainImage.asset)} alt={article.title} />
       <ArticleTopic>{article.topic.name}</ArticleTopic>
       <ArticleTitle>{article.title}</ArticleTitle>
       <ArticleSubtitle>{article.subtitle}</ArticleSubtitle>
